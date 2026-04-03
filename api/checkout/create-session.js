@@ -1,8 +1,7 @@
 // Vercel Serverless: POST /api/checkout/create-session
-const products = require('../../server/data/products.json');
+const products = require('../data/products.json');
 
 module.exports = async (req, res) => {
-    // CORS
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -13,7 +12,12 @@ module.exports = async (req, res) => {
     }
 
     try {
-        const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+        const secretKey = process.env.STRIPE_SECRET_KEY;
+        if (!secretKey) {
+            return res.status(500).json({ error: 'Stripe not configured. Add STRIPE_SECRET_KEY in Vercel Environment Variables.' });
+        }
+
+        const stripe = require('stripe')(secretKey);
         const { items } = req.body;
 
         if (!items || !Array.isArray(items) || items.length === 0) {

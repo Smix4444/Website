@@ -1,8 +1,7 @@
 // Vercel Serverless: GET /api/products
-const products = require('../../server/data/products.json');
+const products = require('../data/products.json');
 
 module.exports = (req, res) => {
-    // CORS
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
