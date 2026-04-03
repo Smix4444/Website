@@ -49,22 +49,39 @@ const App = {
     },
 
     /* ── Scroll reveal (Intersection Observer) ── */
+    _observer: null,
+    _observed: new Set(),
+
     initScrollReveal() {
-        const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-        if (!revealElements.length) return;
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+        // Create observer once, reuse it
+        if (!this._observer) {
+            this._observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        this._observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.05,
+                rootMargin: '0px 0px -20px 0px'
             });
-        }, {
-            threshold: 0.1,
-            rootMargin: '0px 0px -60px 0px'
-        });
+        }
 
-        revealElements.forEach(el => observer.observe(el));
+        // Find and observe new elements
+        const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+        revealElements.forEach(el => {
+            if (!this._observed.has(el)) {
+                this._observed.add(el);
+                this._observer.observe(el);
+
+                // Force-reveal elements already in the viewport
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    setTimeout(() => el.classList.add('visible'), 50);
+                }
+            }
+        });
     },
 
     /* ── Marquee duplication ── */

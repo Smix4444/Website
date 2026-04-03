@@ -30,12 +30,24 @@ function renderProducts(products) {
                     <h3>${App.escapeHtml(product.name)}</h3>
                     <p class="product-price">${(product.price / 100).toFixed(2)} EUR</p>
                 </div>
-                <button class="btn" style="padding: 0.5rem 1rem; font-size: 0.6rem;" onclick="event.stopPropagation(); App.addToCart(${JSON.stringify(product).replace(/"/g, '&quot;')})">ADD</button>
+                <button class="btn add-btn" style="padding: 0.5rem 1rem; font-size: 0.6rem;" data-index="${i}">ADD</button>
             </div>
             <p class="product-category">${App.escapeHtml(product.category)}</p>
         `;
-        card.onclick = () => window.location.href = `product.html?id=${product.id}`;
+        card.onclick = (e) => {
+            if (e.target.classList.contains('add-btn')) return;
+            window.location.href = `product.html?id=${product.id}`;
+        };
         grid.appendChild(card);
+    });
+
+    // Attach add-to-cart listeners properly
+    grid.querySelectorAll('.add-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const idx = parseInt(btn.dataset.index);
+            App.addToCart(products[idx]);
+        });
     });
 
     // Re-init reveals for new elements
