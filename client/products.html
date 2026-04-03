@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLLECTION | VOIDFORM</title>
+    <meta name="description" content="Browse the full VOIDFORM collection. Rings, chains, cuffs, earrings, pendants. Sterling silver. Handmade.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">VOIDFORM</a>
+        <ul>
+            <li><a href="products.html">Collection</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html" id="cart-count">Cart (0)</a></li>
+        </ul>
+    </nav>
+
+    <main style="margin-top: 80px;">
+        <!-- HERO -->
+        <div class="section-header" style="padding-top: 6rem;">
+            <p class="font-mono reveal">10 Pieces · .925 Silver · Handmade</p>
+            <h2 class="reveal" style="font-size: clamp(3rem, 8vw, 7rem);">The<br>Collection</h2>
+        </div>
+
+        <!-- MARQUEE -->
+        <div class="marquee">
+            <div class="marquee-inner">
+                <span>Rings</span>
+                <span>Chains</span>
+                <span>Cuffs</span>
+                <span>Earrings</span>
+                <span>Pendants</span>
+                <span>Collars</span>
+            </div>
+        </div>
+
+        <!-- FILTER BAR -->
+        <div style="padding: 1.5rem 3rem; border-bottom: 1px solid var(--border-color); display: flex; gap: 1.5rem; flex-wrap: wrap;" id="filter-bar">
+            <button class="btn filter-btn active" data-filter="all" style="padding: 0.5rem 1.5rem; font-size: 0.6rem;">ALL</button>
+            <button class="btn filter-btn" data-filter="rings" style="padding: 0.5rem 1.5rem; font-size: 0.6rem;">Rings</button>
+            <button class="btn filter-btn" data-filter="chains" style="padding: 0.5rem 1.5rem; font-size: 0.6rem;">Chains</button>
+            <button class="btn filter-btn" data-filter="cuffs" style="padding: 0.5rem 1.5rem; font-size: 0.6rem;">Cuffs</button>
+            <button class="btn filter-btn" data-filter="earrings" style="padding: 0.5rem 1.5rem; font-size: 0.6rem;">Earrings</button>
+            <button class="btn filter-btn" data-filter="pendants" style="padding: 0.5rem 1.5rem; font-size: 0.6rem;">Pendants</button>
+        </div>
+
+        <!-- PRODUCT GRID -->
+        <section id="all-products" class="product-grid stagger-children">
+            <!-- Products injected by JS -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 VOIDFORM</p>
+        <p>All pieces .925 Sterling Silver</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

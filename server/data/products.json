@@ -1,0 +1,112 @@
+[
+  {
+    "id": "void-ring-01",
+    "name": "VOID RING I",
+    "slug": "void-ring",
+    "description": "Melted heavy sterling silver. A raw, visceral statement of entropy cast from the abyss.",
+    "price": 28000,
+    "category": "rings",
+    "image": "/assets/void_ring.webp",
+    "imagePrompt": "Melted heavy silver ring on a stark textured white background with harsh directional shadows, brutalist jewelry photography, monochromatic, 8k",
+    "details": "Weight: 24g · Material: Oxidized .925 Silver · Handmade in the void · Sizes 6–12"
+  },
+  {
+    "id": "entropy-chain-01",
+    "name": "ENTROPY CHAIN",
+    "slug": "entropy-chain",
+    "description": "Barbed wire links in brutalist silver. Psychological armor forged in chaos.",
+    "price": 54000,
+    "category": "chains",
+    "image": "/assets/entropy_chain.webp",
+    "imagePrompt": "Barbed wire silver chain necklace resting on bone-colored fabric, harsh shadows, stark white background, high contrast, editorial style",
+    "details": "Length: 50cm · Material: Solid .925 Silver · Individually stressed links · Lobster clasp"
+  },
+  {
+    "id": "fracture-cuff-01",
+    "name": "FRACTURE CUFF",
+    "slug": "fracture-cuff",
+    "description": "A split silver plate with inner raw texture. Chaos refined for the wrist.",
+    "price": 31000,
+    "category": "cuffs",
+    "image": "/assets/fracture_cuff.webp",
+    "imagePrompt": "Fractured silver cuff bracelet with raw inner texture, resting on white concrete, dramatic directional shadows, monochromatic, high fashion",
+    "details": "Width: 30mm · Elastic tension fit · Hand-sculpted texture · One size fits most"
+  },
+  {
+    "id": "shroud-pendant-01",
+    "name": "SHROUD PENDANT",
+    "slug": "shroud-pendant",
+    "description": "A heavy oxidized pendant resembling draped bone-white silk frozen in silver.",
+    "price": 19000,
+    "category": "pendants",
+    "image": "/assets/shroud_pendant.webp",
+    "imagePrompt": "Heavy oxidized silver shroud pendant draped over a white marble block, harsh directional light, dark shadows, high contrast, monochromatic",
+    "details": "Pendant: 45mm · Includes 60cm micro-link chain · Oxidized finish · Unisex"
+  },
+  {
+    "id": "decay-signet-01",
+    "name": "DECAY SIGNET",
+    "slug": "decay-signet",
+    "description": "An eroded signet ring with a corroded face. Identity dissolved into nothing.",
+    "price": 34000,
+    "category": "rings",
+    "image": "/assets/decay_signet.webp",
+    "imagePrompt": "Eroded corroded silver signet ring with degraded surface on dark concrete slab, harsh lighting, monochromatic brutalist photography",
+    "details": "Weight: 28g · Material: Oxidized .925 Silver · Hand-corroded finish · Sizes 7–11"
+  },
+  {
+    "id": "schism-earring-01",
+    "name": "SCHISM EARRING",
+    "slug": "schism-earring",
+    "description": "A single fractured silver drop. Asymmetry as philosophy.",
+    "price": 16500,
+    "category": "earrings",
+    "image": "/assets/schism_earring.webp",
+    "imagePrompt": "Single fractured silver drop earring with rough broken edges, floating on invisible string against pure white background, dramatic shadow",
+    "details": "Length: 35mm · Material: .925 Silver · Single piece · Push-back closure"
+  },
+  {
+    "id": "wraith-chain-01",
+    "name": "WRAITH CHAIN",
+    "slug": "wraith-chain",
+    "description": "Ultra-fine layered chains that disappear and reappear as you move. A ghost around your neck.",
+    "price": 42000,
+    "category": "chains",
+    "image": "/assets/wraith_chain.webp",
+    "imagePrompt": "Ultra-fine layered silver chains tangled delicately on white linen, multiple thin strands, harsh shadows, minimalist brutalist product photography",
+    "details": "Layers: 3 · Lengths: 40/45/50cm · Material: .925 Silver · Micro-link construction"
+  },
+  {
+    "id": "trauma-ring-01",
+    "name": "TRAUMA BAND",
+    "slug": "trauma-band",
+    "description": "A thick hammered band with deep gouges. Every scar tells a lie.",
+    "price": 22000,
+    "category": "rings",
+    "image": "/assets/trauma_band.webp",
+    "imagePrompt": "Thick hammered silver band ring with deep random gouges and scratches, on stark white paper background, dramatic directional lighting, product photography",
+    "details": "Width: 8mm · Weight: 18g · Material: .925 Silver · Hand-hammered · Sizes 6–13"
+  },
+  {
+    "id": "phantom-cuff-01",
+    "name": "PHANTOM CUFF",
+    "slug": "phantom-cuff",
+    "description": "Razor-thin silver ear cuff. It was never there. You imagined it.",
+    "price": 12000,
+    "category": "earrings",
+    "image": "/assets/phantom_cuff.webp",
+    "imagePrompt": "Razor-thin silver ear cuff on white plaster ear sculpture, dramatic side lighting, dark shadow on white background, high fashion editorial",
+    "details": "Width: 2mm · Material: .925 Silver · No piercing required · Adjustable tension"
+  },
+  {
+    "id": "abyss-collar-01",
+    "name": "ABYSS COLLAR",
+    "slug": "abyss-collar",
+    "description": "A rigid silver collar that sits like a sentence around your throat. Heavy. Final.",
+    "price": 78000,
+    "category": "chains",
+    "image": "/assets/abyss_collar.webp",
+    "imagePrompt": "Heavy rigid silver collar necklace on a white mannequin neck, dramatic shadows, brutalist editorial style, monochromatic, high contrast, luxury jewelry",
+    "details": "Diameter: 14cm · Weight: 85g · Material: Solid .925 Silver · Hinge clasp · Limited edition"
+  }
+]
