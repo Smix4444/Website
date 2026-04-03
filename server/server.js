@@ -49,11 +49,11 @@ app.use('/api/checkout', require('./routes/checkout'));
 app.use('/api/contact', require('./routes/contact'));
 
 // Serve Static Frontend
-app.use(express.static(path.join(__dirname, '../client')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Catch-all for frontend routing (if using SPA style, though we have separate HTMLs)
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/index.html'));
+    res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
 // Export for Vercel serverless

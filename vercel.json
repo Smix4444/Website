@@ -1,39 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/index.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "client/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "api/index.js"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "client/assets/$1"
-    },
-    {
-      "src": "/css/(.*)",
-      "dest": "client/css/$1"
-    },
-    {
-      "src": "/js/(.*)",
-      "dest": "client/js/$1"
-    },
-    {
-      "src": "/(.*\\.html)",
-      "dest": "client/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "client/$1"
-    }
+  "public": true,
+  "rewrites": [
+    { "source": "/api/products/:id", "destination": "/api/products/[id]" },
+    { "source": "/api/products", "destination": "/api/products/index" },
+    { "source": "/api/checkout/create-session", "destination": "/api/checkout/create-session" },
+    { "source": "/api/contact", "destination": "/api/contact" }
   ]
 }
